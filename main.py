@@ -3,6 +3,7 @@ import base64
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import serialization, hashes
 
+# ENCRYPTION LOGIC 
 def generate_keys():
     private_key = rsa.generate_private_key(
         public_exponent=65537,
@@ -43,6 +44,7 @@ def decrypt_message(ciphertext, private_key):
     )
     return plaintext.decode()
 
+# SERVER / CLIENT
 def server(host, port):
     private_key, public_key = generate_keys()
 
@@ -107,7 +109,7 @@ def client(host, port):
 
         conn.close()
 
-# Runner 
+# RUNNER
 if __name__ == "__main__":
     mode = input("Run as server (s) or client (c)? ")
     host = '127.0.0.1'
