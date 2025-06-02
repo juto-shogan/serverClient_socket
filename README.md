@@ -40,3 +40,18 @@ OR
 pip3 install -r requirements.txt
 ```
 
+## Running code
+
+First is to start the server 
+```python
+python3 server.puy
+```
+
+Tap the GUI button to start the server, then: 
+
+Start the server with the client. Note: not more than one client can connect to the server.
+To start the Client:
+```python
+python3 client.py
+```
+In the small entry space, enter your message and hit the the send button.
