@@ -44,7 +44,7 @@ pip3 install -r requirements.txt
 
 First is to start the server 
 ```python
-python3 server.puy
+python3 server.py
 ```
 
 Tap the GUI button to start the server, then: 
