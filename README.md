@@ -1,57 +1,68 @@
 # serverClient_socket
 
-## About
-This project shows a one-way asymmetric encryption line between a **Server** and a **Client**.
-When a single **Client** sends an encrypted message to a **Server**, the **Server** decrypts that and then  displays the decrypted message in its GUI, The **Server** then sends back an acknowledgement.
-Only one client can connect to the server at a time.
+## 📌 Overview
+This project demonstrates a one-way encrypted communication system using asymmetric encryption between a Client and a Server.
+A single Client connects to a Server, sends an encrypted message, which the Server then decrypts and displays in a GUI.
+After decrypting the message, the Server sends back an acknowledgement to the Client.
 
-## Libraries used.
-- cryptography
-- socket
-- base64
-- Tkinter
+Note: The server supports only one client connection at a time.
+
+## 🧰 Technologies & Libraries Used
+- cryptography – for RSA encryption/decryption
+- socket – for TCP-based communication
+- base64 – for encoding/decoding encrypted data
+- tkinter – for building the server-side GUI
 
 
-## setup
-### To run this, first set up a virtual environment:
-```python
+## ⚙️ Setup Instructions
+
+## 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/serverClient_socket.git
+cd serverClient_socket
+```
+## 2. Set Up a Virtual Environment
+```bash
 python -m venv .venv
 ```
-## Then activate:
-### For Linux 
-```python
-source .venv/bin/activate # for Linux
-```
-### For Windows
-```python
-.venv/Scripts/activate
-```
-
-## Install necessary libraries:
-### For Windows
+## 3. Activate the Environment
+On Linux/macOS:
 ```bash
-pip install -r requirements.txt
+source .venv/bin/activate
 ```
-
-OR 
-
-### For Linux 
+### On Windows:
+```bash
+.venv\Scripts\activate
+```
+## 4. Install Dependencies
+### On Linux/macOS:
 ```bash
 pip3 install -r requirements.txt
 ```
-
-## Running code
-
-First is to start the server 
-```python
-python3 server.py
+### On Windows:
+```bash
+pip install -r requirements.txt
 ```
-
-Tap the GUI button to start the server, then: 
-
-Start the server with the client. Note: not more than one client can connect to the server.
-To start the Client:
-```python
-python3 client.py
+## 🚀 Running the Application
+### 1. Start the Server
+```bash
+python server.py
 ```
-In the small entry space, enter your message and hit the the send button.
+A GUI window will appear.
+
+Click the "Start Server" button in the GUI to begin listening for connections.
+
+### 2. Start the Client
+```bash
+python client.py
+```
+Enter your message in the input field.
+
+Click "Send" to transmit the encrypted message to the server.
+
+⚠️ Important: Only one client can be connected to the server at a time.
+
+## ✅ Features
+Secure one-way communication using RSA encryption
+Interactive server-side GUI for message monitoring
+Simple and self-contained implementation using Python standard and third-party libraries
