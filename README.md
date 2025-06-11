@@ -34,7 +34,8 @@ On Windows:
 ```bash
 .venv\Scripts\activate
 ```
-## 4. Install DependenciesOn Linux/macOS:
+## 4. Install Dependencies
+On Linux/macOS:
 ```bash
 pip3 install -r requirements.txt
 ```
@@ -62,6 +63,6 @@ Click "Send" to transmit the encrypted message to the server.
 ⚠️ Important: Only one client can be connected to the server at a time.
 
 ## ✅ Features
-Secure one-way communication using RSA encryption
-Interactive server-side GUI for message monitoring
-Simple and self-contained implementation using Python standard and third-party libraries
+- Secure one-way communication using RSA encryption
+- Interactive server-side GUI for message monitoring
+- Simple and self-contained implementation using Python standard and third-party libraries
