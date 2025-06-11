@@ -1,4 +1,4 @@
-# serverClient_socket
+# Server Client Socket
 
 ## 📌 Overview
 This project demonstrates a one-way encrypted communication system using asymmetric encryption between a Client and a Server.
