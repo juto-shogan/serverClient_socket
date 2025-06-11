@@ -30,16 +30,15 @@ On Linux/macOS:
 ```bash
 source .venv/bin/activate
 ```
-### On Windows:
+On Windows:
 ```bash
 .venv\Scripts\activate
 ```
-## 4. Install Dependencies
-### On Linux/macOS:
+## 4. Install DependenciesOn Linux/macOS:
 ```bash
 pip3 install -r requirements.txt
 ```
-### On Windows:
+On Windows:
 ```bash
 pip install -r requirements.txt
 ```
